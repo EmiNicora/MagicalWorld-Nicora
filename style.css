@@ -2,6 +2,7 @@
 body{
 	font-size: 16px;
 	background-image: linear-gradient(to bottom, #10141b , #6383b9);
+	margin: 0%;
 }
 
 /*--HEADER--*/
@@ -13,7 +14,6 @@ body{
 	max-width: 1000px;
 	margin: auto;
 	opacity: 0.5;
-
 }
 
 
@@ -34,12 +34,23 @@ body{
 	background: #49ada8;
 }
 
+.castillo{
+position:absolute;
+  height: 800px;
+  width: 1348px;
+  z-index: -1;
+}
+
 .logoharry{
 	height: 400px;
 	width: 700px;
 	margin: auto;
 	display: block;
+	white-space: pre-line;
+	animation-duration: 5s;
+	animation-name: aparecer; 
 }
+
 /*-- FIN HEADER--*/
 
 /*-----FOOTER-----*/
@@ -148,7 +159,7 @@ p{
 }
 
 .contenedor:hover{
-	transform: scale(1.2);
+	transform: scale(1.1);
 
 }
 .contenedor__cards {
@@ -343,9 +354,6 @@ font-family: 'Cinzel', serif;
 	color: #B39048;
 }
 
-.comprarlibro{
-	text-decoration: none;
-}
 /*SECCION STORE*/
 
 .merch{
@@ -435,15 +443,12 @@ color: #B39048;
 .grilla {
     display: grid;
 	grid-template-columns: 600px 300px;
-	grid-template-rows: 190px 190px;
-	background: none;
+	grid-template-rows: 190px auto;
 	grid-template-areas: 
 	"imagennoticia titulo"
-	"imagennoticia parrafo"
-	"imagennnoticia parrafo";
+	"imagennoticia parrafo";
 	grid-column-gap: 50px;
-	grid-row-gap: 100px;
-	height: 650px;
+	align-items: center;
 	width: 100%;
 	margin: 0px;
 }
