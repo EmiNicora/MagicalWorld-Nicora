@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,7 +17,7 @@
 <body id="FondoPantalla">
 	<header>
 		<nav class="menu">
-				
+			
 			<ul>
 				<li><a href="index.html">Inicio</a></li>
 				<li><a href="peliculas.html">Peliculas</a></li>
@@ -24,38 +27,28 @@
 				<li><a href="novedades.html">  Novedades</a></li>
 				<li><a href="contacto.html">Unite</a></li>
 			</ul>
+			</div>
 		</nav>
 	</header>
 
-	<h1>Libros</h1>
-	<h3 class="TituloLibrosyPeliculas">Harry Potter</h3>
-	<p class="DescripcionLibros">El primer libro de Harry Potter, Harry Potter y la piedra filosofal, fue publicado por Bloomsbury en 1997 con una aclamación popular y crítica inmediata. Seis libros más vendidos, tres libros complementarios, un guión de teatro y dos guiones han seguido desde entonces. Los libros de Harry Potter han sido traducidos a más de 80 idiomas, han ganado múltiples premios y han vendido más de 500 millones de copias en todo el mundo, convirtiéndose en la serie de libros más vendida de la historia...
-	</p>
-
-	<a href="#" class="comprarlibro">
+<main>
+	<section>
+		<h1>Libros</h1>
+		<h3 class="TituloLibrosyPeliculas">Harry Potter</h3>
+		<p class="DescripcionLibros wow animate__flash">El primer libro de Harry Potter, Harry Potter y la piedra filosofal, fue publicado por Bloomsbury en 1997 con una aclamación popular y crítica inmediata. Seis libros más vendidos, tres libros complementarios, un guión de teatro y dos guiones han seguido desde entonces. Los libros de Harry Potter han sido traducidos a más de 80 idiomas, han ganado múltiples premios y han vendido más de 500 millones de copias en todo el mundo, convirtiéndose en la serie de libros más vendida de la historia...
+		</p>
+	</section>
 	<div class="padre-flex">
-	<div class="card1">
-		<aside class="card__aside1">
-		<figure class="card__figure1">
-				<img src="img/1.Lapiedrafilosofal.png" alt="hpLibro1" class="card__image1">
-		</figure>
-		</aside>
-			<header class="card__header">
-				<h2 class="card__title">HARRY POTTER Y LA PIEDRA FILOSOFAL</h2>
-			</header>
-				<div class="card__body">
-					<p class="card__copy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, deleniti architecto animi explicabo, sapiente, ex quos nam id temporibus harum autem voluptatibus asperiores perspiciatis nesciunt ipsum cupiditate! Voluptas, aperiam. Dicta.  </p>
-				</div>
-	
-		<div class="card__footer">
-			<div class="card__actions">
-					
-					</div>
-				</div>
-
+		<div class="card1">
+			<figure class="card__figure1">
+					<a href="#"><img src="img/1.Lapiedrafilosofal.png" alt="hpLibro1" class="card__image1"></a> 
+			</figure>
+					<h2 class="card__title">HARRY POTTER Y LA PIEDRA FILOSOFAL</h2>
+						<p class="card__copy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, deleniti architecto animi explicabo, sapiente, ex quos nam id temporibus harum autem voluptatibus asperiores perspiciatis nesciunt ipsum cupiditate! Voluptas, aperiam. Dicta.  </p>
+						
+		</div>
 	</div>
-</div>
-</a>
+
 
 	<a href="#" class="comprarlibro">
 		<div class="padre-flex">
@@ -81,6 +74,9 @@
 		</div>
 	</div>
 	</a>
+
+</main>
+
 	<!--EMPIEZA FOOTER-->
 <footer>
 	<div class="piehorizontal">
@@ -90,5 +86,9 @@
 	</div>
 	  </footer>
 	<!--TERMINA FOOTER-->
+	<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </body>
 </html>
