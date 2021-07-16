@@ -5,14 +5,24 @@ body{
 }
 
 /*--HEADER--*/
+
+.barranegra{
+	background-color: black;
+	height: 70px;
+	
+}
+
+.barranegra__tamaño{
+	width: 80px;
+	margin: 0 auto;
+	display: block;
+}
 .menu{
 	text-align: center;
 	list-style: none;
 	color: white;
-	background-color: black ;
-	max-width: 1000px;
+	background-color: rgb(1, 29, 51) ;
 	margin: auto;
-	opacity: 0.5;
 
 }
 
@@ -34,12 +44,25 @@ body{
 	background: #49ada8;
 }
 
-.logoharry{
-	height: 400px;
-	width: 700px;
-	margin: auto;
-	display: block;
+
+.fondoprincipal{
+	background-image: url(img/harryfondo.jpg);
 }
+
+.banner{
+	max-width: 100%;
+	
+	
+
+}
+
+.logoharry{
+	display: block;
+	max-width: 100%;
+	margin:0 auto;
+}
+
+
 /*-- FIN HEADER--*/
 
 /*-----FOOTER-----*/
@@ -129,17 +152,9 @@ p{
 		background-image: url(img/fondolibrosypeliculas.png);
 }
 
-.TituloLibrosyPeliculas{
-	font-family: 'cinzel', serif;
-	font-size: 23.9999px;
-	font-weight: 700;
-	line-height: 31.9199px;
-	text-align: center;
-	color: #B39048;
-	margin: 50px;
-	}
 
-/*PROBANDOPROBANDOPROBANDO*/
+/*CONTENEDOR*/
+
 .contenedor{
 	max-width: 1000px;
 	width: 90%;
@@ -194,9 +209,9 @@ p{
 	color: #B39048;
 	font-size: 60px;
 	font-weight: bold;
-	position: absolute;
 	right: 10%;
 	bottom: 40%;
+	text-align: left;
 }
 .card__titulo2 {
 	font-family: 'Cinzel', serif;
@@ -244,6 +259,41 @@ p{
 }
 
 /*SECCION PELICULAS*/
+.pantallapelicula{
+	background-image: url(img/pantallapelicula.jpg);
+	width: 100%;
+
+}
+.TituloLibrosyPeliculas{
+	font-family: 'cinzel', serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 32px;
+	text-align: center;
+	color: #B39048;
+	margin: 0;
+}
+
+
+.separadores{
+
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding-top: 20px;
+}
+
+.separador{
+	border-bottom: 1px solid rgb(185, 180, 179);
+	opacity: .26;
+	flex:1 1;
+}
+
+.imagenseparador{
+	display: block;
+	margin: 0px 10px 20px;
+}
+
 .padre-flex {
 	display: flex;
 	background-color: none;
@@ -341,6 +391,8 @@ p{
 font-family: 'Cinzel', serif;
 	text-align: center;
 	color: #B39048;
+	font-weight:bold;
+	font-size: 120% ;
 }
 
 .comprarlibro{
