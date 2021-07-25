@@ -1,0 +1,48 @@
+.barranegra{
+	background-color: black;
+	height: 70px;
+	
+}
+
+.barranegra__tamaño{
+	width: 80px;
+	margin: 0 auto;
+	display: block;
+}
+
+.menu{
+     text-align: center;
+     list-style: none;
+     color: white;
+     background-color: rgb(1, 29, 51) ;
+     margin: auto;
+     
+        li{
+         display: inline-block;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    padding: 20px;
+                    display: block;
+
+                    &:hover{
+                            background: #49ada8;
+                    }
+                }
+        }
+    }
+
+.fondoprincipal{
+	background-image: url(img/harryfondo.jpg);
+}
+
+.banner{
+	max-width: 100%;
+}
+
+.logoharry{
+	display: block;
+	max-width: 100%;
+	margin:0 auto;
+}

@@ -1,0 +1,117 @@
+@import "operadores";
+
+body{
+	font-size: 16px;
+	background-color: #10141b;
+	margin: 0%;
+}
+
+@import "header";
+@import "Footer";
+@import "Main";
+
+/*TITULOS */
+
+h1{
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	color: #B39048;
+	text-align: center;
+	font-size: $font-size + 200;
+}
+/*FIN TITULOS */
+h2{ 
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	color: #B39048;
+	font-size: $font-size + 100;
+}
+
+h3{
+	color: white;
+
+}
+
+p{
+	text-align: center;
+	color: white;
+}
+
+.JuegoHarry {
+     p {
+	font-family: 'Cinzel', serif;
+	color: #B39048;
+	font-size: 60px;
+	font-weight: bold;
+     }
+
+}
+
+.harryseleccionador{
+    p {
+        font-family: 'Cinzel', serif;
+        color: #B39048; 
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+}
+
+#FondoPantalla{
+		background-image: url(img/fondolibrosypeliculas.png);
+}
+
+
+@import "Contenedor";
+@import "Peliculas";
+@import "Libros";
+
+/*SECCION STORE*/
+
+.merch{
+	width: 10%;
+}
+
+/*SECCION STORE*/
+
+@import "Formulario";
+@import "Atracciones";
+
+
+/*grid*/
+
+.grilla {
+    display: grid;
+	grid-template-columns: 600px 300px;
+	grid-template-rows: 190px auto;
+	grid-template-areas: 
+	"imagennoticia titulo"
+	"imagennoticia parrafo";
+	grid-column-gap: 50px;
+	align-items: center;
+	width: 100%;
+	margin: 0px;
+}
+
+.titulo{
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	color: #B39048;
+	grid-area: titulo;
+ font-size: 25px	
+}
+
+.parrafo{
+	grid-area: parrafo;
+	font-family: 'Montserrat', sans-serif;
+padding: 20px;
+font-size: 16px;
+justify-content: right;
+}
+
+.imagennoticia{
+	grid-area: imagennoticia;
+padding: 20px;
+font-size: 16px;
+}
+
