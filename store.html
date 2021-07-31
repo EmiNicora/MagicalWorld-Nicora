@@ -3,8 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 	<title>Store</title>
 </head>
@@ -23,7 +27,7 @@
 				<li><a href="libros.html">Libros</a></li>
 				<li><a href="atracciones.html">Atracciones</a></li>
 				<li><a href="store.html">Store </a></li>
-				<li><a href="novedades.html">  Novedades</a></li>
+				<li><a href="novedades.html"> Novedades</a></li>
 				<li><a href="contacto.html">Unite</a></li>
 			</ul>
 		</nav>
@@ -32,17 +36,77 @@
 <main>
 	<h3 class="TituloLibrosyPeliculas">COMPRAR POR CASA</h3>
 
-	<div class="CasasHarryPotter__"></div>
+<section class="MerchPorCasas">
+<div class="padre-flex_store">
+	<a href="#" class="comprarlibro">
+			<div class="card1">
+				<div class="card__casas">
+					<img src="img/images_hp-landing_gryffindor.png" alt="merchGryffindor" class="imagenCasas img-responsive">
+				</div>
+		
+					<div class="card__header">
+						<h2 class="card__title">Gryffindor</h2>
+					</div>
+			</div>
+			</a>
 
-			<img src="img/gryffindor.png" alt="merchGryffindor" class="merch" >
-			<img src="img/slytherin.png" alt="merchSlytherin" class="merch">
-			<img src="img/ravenclaw.png" alt="merchRavenclaw" class="merch">
-			<img src="img/hufflepuff.png" alt="merchhufflepuff" class="merch">
+			<!--COMO HAGO PARA QUE EL TEXTO NO QUEDE SOBRE LA IMAGEN?-->
+			<!-- POR QUE CUANDO CIERRO CON A, SE ME ACHICA LA IMAGEN?-->
 
+			<!----->
+					<div class="card1">
+						<div class="card__casas">
+							<img src="img/images_hp-landing_slytherin.png" alt="merchSlytherin" class="imagenCasas img-responsive">
+						</div>
+						<div class="card__header">
+							<h2 class="card__title">Slytherin</h2>
+						</div>
+					</div>
+			<!----->
 
-			<img src="img/RAVENCLAW-PIN-A_V1_grande.png" alt="merchravenclaw" class="merch">
-
+			<!--FIJARSE CLASS IMAGEN PARA TAMAÑO.-->
+			<!--CARD__FIGURE 1 NO ESTÁ EN EL CSS?? FIJARSE--->
+		<div class="card1">
+				<div class="card__casas">
+					<img src="img/images_hp-landing_ravenclaw.png" alt="merchRavenclaw" class="imagenCasas img-responsive">
+				</div>
+				<div class="card__header">
+						<h2 class="card__title">Ravenclaw</h2>
+				</div>
+				</div>
+	<!------>
+	<div class="card1">
+			<div class="card__casas">
+				<img src="img/hufflepuff.png" alt="merchhufflepuff" class="imagenCasas img-responsive">
+			</div>
+			<div class="card__header">
+					<h2 class="card__title">Hufflepuff</h2>
+			</div>
 	</div>
+</div>
+</section>
+
+<section class="merchporitems-flex">
+	<div class="bordes">
+		<div class=""><img class="iconomerch" src="img/new-varita.png" alt=""></div>
+		<p>VARITAS</p>
+	</div>
+
+	<div class="bordes">
+		<img class="iconomerch" src="img/new-accesorios.png" alt="">
+		<p>ACCESORIOS</p>
+	</div>
+
+	<div class="bordes">
+		<img class="iconomerch" src="img/new-indumentaria.png" alt="">
+		<p>INDUMENTARIA</p>
+	</div>
+
+	<div class="bordes">
+		<img class="iconomerch" src="img/new-book.png" alt="">
+		<p>LIBROS</p>
+	</div>
+</section>
 </main>
 <!--EMPIEZA FOOTER-->
 <footer>

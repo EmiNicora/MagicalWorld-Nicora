@@ -289,15 +289,15 @@ p {
   margin: 5;
   height: auto;
 }
-.padre-flex div .card1 .card__figure {
+.padre-flex div .card__figure {
   width: 75%;
   height: 50%;
   float: right;
 }
-.padre-flex div .card1 .card__figure .card__image1 {
+.padre-flex div .card__figure .card__image1 {
   width: 100%;
 }
-.padre-flex div .botonTextoVer {
+.padre-flex .botonTextoVer {
   border: none;
   min-width: 90px;
   padding: 0px 50px;
@@ -311,7 +311,7 @@ p {
   display: inline-flex;
   color: black;
 }
-.padre-flex div .botonTextoVer:hover {
+.padre-flex .botonTextoVer:hover {
   color: #B39048;
   background: white;
   text-decoration: none;
@@ -319,12 +319,24 @@ p {
 .padre-flex .card__copy {
   font-family: "Montserrat", sans-serif;
 }
+@media (max-width: 820px) {
+  .padre-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .card1 {
   position: relative;
   width: 25%;
   margin: 5;
   height: auto;
+}
+@media (max-width: 820px) {
+  .card1 {
+    width: 50%;
+  }
 }
 
 .card__figure {
@@ -504,6 +516,52 @@ p {
   grid-area: imagennoticia;
   padding: 20px;
   font-size: 16px;
+}
+
+.padre-flex_store {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: auto;
+}
+
+.card__title {
+  animation-duration: 5s;
+  animation-name: aparecer;
+}
+
+.imagenCasas {
+  width: 60%;
+  align: center;
+  animation-duration: 5s;
+  animation-name: aparecer;
+}
+
+.card__casas {
+  width: 75%;
+  height: 50%;
+  float: right;
+}
+
+.merchporitems-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+}
+.merchporitems-flex .bordes {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  padding: 3px 10px;
+  border: PowderBlue 1px solid;
+  border-radius: 10px;
+  align-items: center;
+}
+.merchporitems-flex .bordes .iconomerch {
+  width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
