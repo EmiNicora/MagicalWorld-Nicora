@@ -16,7 +16,7 @@
 	<header>
 		<div class="barranegra">
 		
-			<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="">
+			<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="Logo wizarding world">
 		
 		</div>
 		<nav class="menu">
@@ -31,17 +31,47 @@
 				<li><a href="contacto.html">Unite</a></li>
 			</ul>
 		</nav>
+
+		<nav class="mySidenav">
+			<button class="MenuButton"> 
+				<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+					<ul>
+						<li>
+							<a href="index.html">Inicio</a>
+						</li>
+						<li>
+							<a href="peliculas.html">Peliculas</a>
+						</li>
+						<li>
+							<a href="libros.html">Libros</a>
+						</li>
+						<li>
+							<a href="atracciones.html">Atracciones</a>
+						</li>
+						<li>
+							 <a href="store.html">Store</a>
+						</li>
+						<li>
+							<a href="novedades.html">Novedades</a>
+						</li>
+						<li>
+							<a href="contacto.html">Unite</a>
+						</li>
+					</ul>
+				</a>
+			</button>
+		</nav>
+		<span class="span" style="font-size:25px;cursor:pointer; color: #B39048;" onclick="openNav()">&#9776; </span>
 	</header>
 
 <main>
-	<h3 class="TituloLibrosyPeliculas">COMPRAR POR CASA</h3>
+	<h1 class="TituloLibrosyPeliculas">ELEGÍ POR CASA</h1>
 
 <section class="MerchPorCasas">
 <div class="padre-flex_store">
-	<a href="#" class="comprarlibro">
 			<div class="card1">
 				<div class="card__casas">
-					<img src="img/images_hp-landing_gryffindor.png" alt="merchGryffindor" class="imagenCasas img-responsive">
+					<img src="img/images_hp-landing_gryffindor.png" alt="merch Gryffindor" class="imagenCasas img-responsive">
 				</div>
 		
 					<div class="card__header">
@@ -56,7 +86,7 @@
 			<!----->
 					<div class="card1">
 						<div class="card__casas">
-							<img src="img/images_hp-landing_slytherin.png" alt="merchSlytherin" class="imagenCasas img-responsive">
+							<img src="img/images_hp-landing_slytherin.png" alt="merch Slytherin" class="imagenCasas img-responsive">
 						</div>
 						<div class="card__header">
 							<h2 class="card__title">Slytherin</h2>
@@ -68,7 +98,7 @@
 			<!--CARD__FIGURE 1 NO ESTÁ EN EL CSS?? FIJARSE--->
 		<div class="card1">
 				<div class="card__casas">
-					<img src="img/images_hp-landing_ravenclaw.png" alt="merchRavenclaw" class="imagenCasas img-responsive">
+					<img src="img/images_hp-landing_ravenclaw.png" alt="merch Ravenclaw" class="imagenCasas img-responsive">
 				</div>
 				<div class="card__header">
 						<h2 class="card__title">Ravenclaw</h2>
@@ -77,7 +107,7 @@
 	<!------>
 	<div class="card1">
 			<div class="card__casas">
-				<img src="img/hufflepuff.png" alt="merchhufflepuff" class="imagenCasas img-responsive">
+				<img src="img/hufflepuff.png" alt="merch Hufflepuff" class="imagenCasas img-responsive">
 			</div>
 			<div class="card__header">
 					<h2 class="card__title">Hufflepuff</h2>
@@ -88,22 +118,22 @@
 
 <section class="merchporitems-flex">
 	<div class="bordes">
-		<div class=""><img class="iconomerch" src="img/new-varita.png" alt=""></div>
+		<div class=""><img class="iconomerch" src="img/new-varita.png" alt="Icono sección varitas"></div>
 		<p>VARITAS</p>
 	</div>
 
 	<div class="bordes">
-		<img class="iconomerch" src="img/new-accesorios.png" alt="">
+		<img class="iconomerch" src="img/new-accesorios.png" alt="Icono sección accesorios">
 		<p>ACCESORIOS</p>
 	</div>
 
 	<div class="bordes">
-		<img class="iconomerch" src="img/new-indumentaria.png" alt="">
+		<img class="iconomerch" src="img/new-indumentaria.png" alt="Icono sección indumentaria">
 		<p>INDUMENTARIA</p>
 	</div>
 
 	<div class="bordes">
-		<img class="iconomerch" src="img/new-book.png" alt="">
+		<img class="iconomerch" src="img/new-book.png" alt="Icono sección libros">
 		<p>LIBROS</p>
 	</div>
 </section>
@@ -111,11 +141,20 @@
 <!--EMPIEZA FOOTER-->
 <footer>
 	<div class="piehorizontal">
-		<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="youtube" class="youtube"></a> 
-		<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="instagram" class="instagram"></a>
+		<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="logo youtube" class="youtube"></a> 
+		<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="logo instagram" class="instagram"></a>
 		</p>
 	</div>
 	  </footer>
 	<!--TERMINA FOOTER-->
+
+	<script>
+		function openNav() {
+			document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+				}
+		function closeNav() {
+			document.getElementsByClassName("mySidenav")[0].style.width = "0";
+				}
+	</script>
 		</body>
 </html>

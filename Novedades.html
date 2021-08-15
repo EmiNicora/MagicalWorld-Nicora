@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><!--revisar-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 
 		<div class="barranegra">
 		
-			<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="">
+			<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="Logo wizarding world">
 		
 		</div>
 		<nav class="menu">
@@ -32,25 +32,66 @@
 				<li><a href="contacto.html">Unite</a></li>
 			</ul>
 		</nav>
+
+		<nav class="mySidenav">
+			<button class="MenuButton"> 
+				<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+					<ul>
+						<li>
+							<a href="index.html">Inicio</a>
+						</li>
+						<li>
+							<a href="peliculas.html">Peliculas</a>
+						</li>
+						<li>
+							<a href="libros.html">Libros</a>
+						</li>
+						<li>
+							<a href="atracciones.html">Atracciones</a>
+						</li>
+						<li>
+							 <a href="store.html">Store</a>
+						</li>
+						<li>
+							<a href="novedades.html">Novedades</a>
+						</li>
+						<li>
+							<a href="contacto.html">Unite</a>
+						</li>
+					</ul>
+				</a>
+			</button>
+		</nav>
+		<span class="span" style="font-size:25px;cursor:pointer; color: #B39048;" onclick="openNav()">&#9776; </span>
 	</header>
 
 <main>
 
 	<section class="grilla">
-		<div class="titulo"><p>Nueva exposición fotográfica de Harry Potter se inaugura en Londres este mes de julio</p></div>
+		<div class="titulo"><p>Nueva exposición fotográfica de Harry Potter se inaugura en Londres este mes de julio</p>
+		</div>
 			<div class="parrafo"><p>El 12 de julio se inaugurará en el Covent Garden de Londres una nueva exposición fotográfica que celebra la magia visual del mundo mágico, con imágenes detrás de cámaras y oportunidades fotográficas especiales para los visitantes. </p></div>
-		<img class="imagennoticia" src="img/exhibición.jpg" alt="">
+		<img class="imagennoticia" src="img/exhibición.jpg" alt="Exhibición en Londres">
 	</section>
 </main>
 	
 <footer>
 	<div class="piehorizontal">
-		<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="youtube" class="youtube"></a> 
-		<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="instagram" class="instagram"></a>
+		<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="logo youtube" class="youtube"></a> 
+		<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="logo instagram" class="instagram"></a>
 		</p>
 	</div>
 	  </footer>
 	<!--TERMINA FOOTER-->
+
+	<script>
+		function openNav() {
+			document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+				}
+		function closeNav() {
+			document.getElementsByClassName("mySidenav")[0].style.width = "0";
+				}
+	</script>
 	
 </body>
 </html>

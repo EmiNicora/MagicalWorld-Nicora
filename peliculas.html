@@ -14,19 +14,20 @@
 <meta name="keywords" content="Libros, Harry Potter, Hogwarts, Potterhead, Gryffindor, Slytherin, Ravenclaw, Hufflepuff, Reliquias de la muerte, Piedra Filosofal, Cármara Secreta, Prisionero de Azkaban, Cáliz de fuego, La Orden del Fenix, Misterio del Principe, Rowling">
 <meta property="og:title" content="Magic World, la saga completa de Harry Potter y Animales Fantásticos.">
 <meta property="og:url" content="http://">
-<meta property="og:imagen" content="">
+<meta property="og:image" content="">
 <meta property="og:description" content="Conocé las distintas adaptaciones de los libros de Harry Potter y Animales fantásticos">
 <meta property="og:locale" content="es_ES"><!--preguntar a Anto si es AR_ar-->
 <title>Harry Potter y Animales Fantásticos, Peliculas | Magic World</title>
 </head>
 <body>
+	
+<header>
 	<section class="pantallapelicula">
 		
 	</section>
-<header>
 	<div class="barranegra">
 		
-		<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="">
+		<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="Logo Wizarding World">
 	
 	</div>
 	<nav class="menu">
@@ -43,13 +44,41 @@
 		</div>
 	</nav>
 
-	
+	<nav class="mySidenav">
+		<button class="MenuButton"> 
+			<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="peliculas.html">Peliculas</a>
+					</li>
+					<li>
+						<a href="libros.html">Libros</a>
+					</li>
+					<li>
+						<a href="atracciones.html">Atracciones</a>
+					</li>
+					<li>
+						 <a href="store.html">Store</a>
+					</li>
+					<li>
+						<a href="novedades.html">Novedades</a>
+					</li>
+					<li>
+						<a href="contacto.html">Unite</a>
+					</li>
+				</ul>
+			</a>
+		</button>
+	</nav>
+	<span class="span" style="font-size:25px;cursor:pointer; color: #B39048;" onclick="openNav()">&#9776; </span>
 </header>
-
-<h1>PELICULAS</h1>
-
+<main>
+	<div id="particles-js"></div>
+<section> <h1>PELICULAS</h1></section><!--DONDE CIERRO SECTION?-->
 <!--SEPARADORES-->
- <section class="separadores1">
 <div class="separadores">
 	<hr class="separador">
 	<picture class="imagenseparador">
@@ -57,8 +86,6 @@
 		</picture>
 			<hr class="separador">
 </div>
-
-
 <h2 class="TituloLibrosyPeliculas">Harry Potter</h2>
 
 <div class="separadores">
@@ -69,6 +96,9 @@
 			<hr class="separador">
 </div>
 </section>
+
+
+
 <!--FIN DE SEPARADORES-->
 
 <!--EMPIEZA SECCION PELICULAS-->
@@ -77,14 +107,14 @@
 <div class="padre-flex">
 		<div class="card1">
 			<figure class="card__figure1">
-					<img src="img/HP_1_Sorcerers_Stone_ES.jpg" alt="hpPelicula1" class="card__image1 img-responsive">
+					<img src="img/HP_1_Sorcerers_Stone_ES.jpg" alt="Poster piedra Filosofal" class="card__image1 img-responsive">
 			</figure>
 				<header class="card__header">
 					<h2 class="card__title">HARRY POTTER Y LA PIEDRA FILOSOFAL</h2>
 				</header>
 					<div class="card__actions">
-							<a href="#" class="button">
-							<span class="botonTextoVer">Más información</span>
+							<a href="https://www.youtube.com/watch?v=-ojN9LOtYF4" target="_blank" class="button">
+							<span class="botonTextoVer">Ver trailer</span>
 							</a>
 					</div>
 			
@@ -93,98 +123,98 @@
 	
 		<div class="card1">
 				<figure class="card__figure1">
-						<img src="img/HP_2_Chamber_Secrets_ES.jpg" alt="hpPelicula2" class="card__image1">
+						<img src="img/HP_2_Chamber_Secrets_ES.jpg" alt="Poster cámara secreta " class="card__image1">
 				</figure>
 				<header class="card__header">
 					<h2 class="card__title">HARRY POTTER Y LA CAMARA SECRETA</h2>
 				</header>
 				<div class="card__actions">
-						<a href="#" class="button">
-						<span class="botonTextoVer">Más información</span>
+						<a href="https://www.youtube.com/watch?v=DIPSy8lD1Wc" target="_blank"	class="button">
+						<span class="botonTextoVer">Ver trailer</span>
 						</a>
 				</div>
 		</div>
 
 		<div class="card1">
 				<figure class="card__figure1">
-					<img src="img/HP_3_Prisoner_Azkaban_ES.jpg" alt="hp3" class="card__image1">
+					<img src="img/HP_3_Prisoner_Azkaban_ES.jpg" alt="Poster Prisionero de Azkaban" target="_blank" class="card__image1">
 				</figure>
 				<header class="card__header">
 					<h2 class="card__title">HARRY POTTER Y EL PRISIONERO DE AZKABAN</h2>
 				</header>
 				<div class="card__actions">
-						<a href="#" class="button">
-						<span class="botonTextoVer">Más información</span>
+						<a href="https://www.youtube.com/watch?v=wUY2XAUigh0" class="button">
+						<span class="botonTextoVer">Ver trailer</span>
 						</a>
 					</div>
 		</div>	
 
 		<div class="card1">
 				<figure class="card__figure1">
-					<img src="img/HP_4_Goblet_Fire_ES.jpg" alt="hp4" class="card__image1">
+					<img src="img/HP_4_Goblet_Fire_ES.jpg" alt="Poster Cáliz de fuego" class="card__image1">
 				</figure>
 				<header class="card__header">
 					<h2 class="card__title">HARRY POTTER Y EL CALIZ DE FUEGO</h2>
 				</header>
-			<div class="card__footer">
+			<div class="card__actions">
 						<a href="#" class="button">
-						<span class="botonTextoVer">Más información</span>
+						<span class="botonTextoVer">Ver trailer</span>
 						</a>
 				</div>
 		</div>
 		
 		<div class="card1">
 				<figure class="card__figure1">
-					<img src="img/HP_5_Order_Phoenex_ES.jpg" alt="hp5" class="card__image1">
+					<img src="img/HP_5_Order_Phoenex_ES.jpg" alt="Poster La orden del fenix" class="card__image1">
 				</figure>
 				<header class="card__header">
 					<h2 class="card__title">HARRY POTTER Y LA ORDEN DEL FENIX</h2>
 				</header>
-			<div class="card__footer">
+			<div class="card__actions">
 						<a href="#" class="button">
-						<span class="botonTextoVer">Más información</span>
+						<span class="botonTextoVer">Ver trailer</span>
 						</a>
 					</div>
 		</div>
 
 		<div class="card1">
 					<figure class="card__figure1">
-						<img src="img/HP_6_Half_Blood_Prince_ES.jpg" alt="hp6" class="card__image1">
+						<img src="img/HP_6_Half_Blood_Prince_ES.jpg" alt="Poster El misterio del principe" class="card__image1">
 					</figure>
 					<header class="card__header">
 						<h2 class="card__title">HARRY POTTER Y EL MISTERIO DEL PRINCIPE</h2>
 					</header>
-			<div class="card__footer">
+			<div class="card__actions">
 							<a href="#" class="button">
-							<span class="botonTextoVer">Más información</span>
+							<span class="botonTextoVer">Ver trailer</span>
 							</a>
 			</div>
 		</div>
 
 		<div class="card1">
 				<figure class="card__figure1">
-					<img src="img/HP_6_Half_Blood_Prince_ES.jpg" alt="hp6" class="card__image1">
+					<img src="img/HP_7_Deathly_Hallows_1_ES.jpg" alt="Poster Reliquias de la muerte" class="card__image1">
 				</figure>
 				<header class="card__header">
 					<h2 class="card__title">HARRY POTTER Y LAS RELIQUIAS DE LA MUERTE P.I</h2>
 				</header>
-			<div class="card__footer">
+			<div class="card__actions">
 						<a href="#" class="button">
-						<span class="botonTextoVer">Más información</span>
+						<span class="botonTextoVer">Ver trailer</span>
 						</a>
 					</div>
 		</div>
 
 		<div class="card1">
 				<figure class="card__figure1">
-					<img src="img/HP_8_Deathly_Hallows_2_ES.jpg" alt="hp7b" class="card__image1">
+					<img src="img/HP_8_Deathly_Hallows_2_ES.jpg" alt="Poster reliquias de la muerte" class="card__image1">
 				</figure>
 				<header class="card__header">
 					<h2 class="card__title">HARRY POTTER Y LAS RELIQUIAS DE LA MUERTE P.II</h2>
 				</header>
-			<div class="card__footer">
+			<div class="card__actions">
 						<a href="#" class="button">
-						<span class="botonTextoVer">Más información</span>
+						<span class="botonTextoVer">Ver trailer</span>
 						</a>
 			</div>
 		</div>
@@ -200,7 +230,7 @@
 		</picture>
 			<hr class="separador">
 </div>
-<h2 class="TituloLibrosyPeliculas">	Animales Fantasticos</h2>
+<h2 class="TituloLibrosyPeliculas">Animales Fantasticos</h2>
 
 <div class="separadores">
 	<hr class="separador">
@@ -222,9 +252,9 @@
 		<header class="card__header">
 			<h2 class="card__title">ANIMALES FANTASTICOS Y DÓNDE ENCONTRARLOS</h2>
 		</header>
-		<div class="card__footer">
+		<div class="card__actions">
 					<a href="#" class="button">
-					<span class="botonTextoVer">Más información</span>
+					<span class="botonTextoVer">Ver trailer</span>
 					</a>
 			</div>
 </div>
@@ -237,22 +267,33 @@
 			<h2 class="card__title">ANIMALES FANTASTICOS LOS CRIMENES DE GRINDELWALD</h2>
 		</header>
 		<!--saque card__copy-->
-			<div class="card__footer">
+			<div class="card__actions">
 					<a href="#" class="button">
-					<span class="botonTextoVer">Más información</span>
+					<span class="botonTextoVer">Ver trailer</span>
 					</a>
 			</div>
 		</div>
 </section>
+</main>
 
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
 <!--EMPIEZA FOOTER-->
 <footer>
 	<div class="piehorizontal">
-		<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="youtube" class="youtube"></a> 
-		<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="instagram" class="instagram"></a>
+		<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="logo youtube" class="youtube"></a> 
+		<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="logo instagram" class="instagram"></a>
 		</p>
 	</div>
-	  </footer>
+</footer>
 	<!--TERMINA FOOTER-->
+	<script>
+		function openNav() {
+			document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+				}
+		function closeNav() {
+			document.getElementsByClassName("mySidenav")[0].style.width = "0";
+				}
+	</script>
 </body>
 </html>

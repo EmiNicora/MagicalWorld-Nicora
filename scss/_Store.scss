@@ -21,7 +21,6 @@
 
 .card__casas{
 	width: 75%;
-	height: 50%;
 	float: right;
   }
 
@@ -44,7 +43,9 @@
 	
 
 	.iconomerch{
-		width: 100px;
+		display: block;
+    width: 100px;
+    margin: 15px auto;
 	}
 }
 

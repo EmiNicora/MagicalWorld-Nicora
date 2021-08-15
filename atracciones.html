@@ -26,7 +26,7 @@
 
 	<div class="barranegra">
 		
-		<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="">
+		<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="Logo wizarding world">
 	
 	</div>
 	
@@ -37,18 +37,47 @@
 			<li><a href="peliculas.html">Peliculas</a></li>
 			<li><a href="libros.html">Libros</a></li>
 			<li><a href="atracciones.html">Atracciones</a></li>
-			<li><a href="store.html">Store </a></li>
-			<li><a href="novedades.html">  Novedades</a></li>
+			<li><a href="store.html">Store</a></li>
+			<li><a href="novedades.html">Novedades</a></li>
 			<li><a href="contacto.html">Unite</a></li>
 		</ul>
 	</nav>
-</header>	
 
+	<nav class="mySidenav">
+		<button class="MenuButton"> 
+			<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="peliculas.html">Peliculas</a>
+					</li>
+					<li>
+						<a href="libros.html">Libros</a>
+					</li>
+					<li>
+						<a href="atracciones.html">Atracciones</a>
+					</li>
+					<li>
+						 <a href="store.html">Store</a>
+					</li>
+					<li>
+						<a href="novedades.html">Novedades</a>
+					</li>
+					<li>
+						<a href="contacto.html">Unite</a>
+					</li>
+				</ul>
+			</a>
+		</button>
+	</nav>
+	<span class="span" style="font-size:25px;cursor:pointer; color: #B39048;" onclick="openNav()">&#9776; </span>
+</header>	
+<main>
+	<div id="particles-js"></div>
 	<h1 class="TituloLibrosyPeliculas">ATRACCIONES</h1>
 
-<main>
-
-</main>
 <section class="carrusel">
 	<div class="container"> 
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -57,26 +86,43 @@
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+			<li data-target="#myCarousel" data-slide-to="5"></li>
 		  </ol>
 	  
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner">
 			<div class="item active">
-			  <img src="img/orlando.jpg" alt="Atraccion Orlando" style="width:30%;">
+				<img src="img/universal-studios-hollywood-8c8cac97fd9f7fb924fe5a99d1d7e279.png.jpg" alt="Studio Tour Hollywood" class="Universal Studios Hollywood">
 			  <div class="carousel-caption d-none d-md-block">
-				<h2></h2>
+				<h2 class="Atracciones__enlace-titulo">Universal Studios Hollywood</h2>
 				<p></p>
 			  </div>
 			</div>
 	  
 			<div class="item">
-			  <img src="img/exhibition-b689d991a26e8c196e31e3073f74f251.jpeg.jpg" alt="dos" style="width:30%;">
+			  <img src="img/exhibition-b689d991a26e8c196e31e3073f74f251.jpeg.jpg" alt="Harry Potter: Exhibiciones">
 		  
 			</div>
 		  
 			<div class="item">
-			  <img src="img/cineconcert-c2f42b9ff77b8bfacb236f77dbd5ef08.jpeg.jpg" alt="tres" style="width:30%;">
+			  <img src="img/cineconcert-c2f42b9ff77b8bfacb236f77dbd5ef08.jpeg.jpg" alt="Conciertos de peliculas Harry Potter">
 			</div>
+
+			<div class="item">
+				<img src="img/universal-studios-japan-d2c827e847435ae4e9d00db4e5a701c0.png.jpg" alt="Universal Studios Japón">
+			  </div>
+
+			  <div class="item">
+				<img src="img/makigofhp.jpg" alt="Warner Bros Studios London">
+			  </div>
+
+			  <div class="item">
+				<img src="img/universal-studios-orlando-70045ec4aaaedce128fe9d322aae8416.png.jpg" alt="Universal Studios Orlando">
+			  </div>
+
+			  
 		  </div>
 	  
 		  <!-- Left and right controls -->
@@ -91,100 +137,31 @@
 		</div>
 	  </div>
 </section>
-	
-<section class="Experiencias">
 
-	<div class="ContenedorAtracciones">
-		<div class="Atracciones">
-			<a href="#" class="Atracciones__thumbnail">
-				<img class="Atracciones__img" src="img/orlando.jpg" alt="AtraccionOrlando">
-			</a>
-			<div class="Atracciones__Textos">
-				<div class="Atracciones__Titulo">
-					<a href="#" class="Atracciones__enlace-titulo">Universal Orlando Resort</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-<div class="ContenedorAtracciones">
-	<div class="Atracciones">
-		<a href="#" class="Atracciones__thumbnail">
-			<img class="Atracciones__img" src="img/makigofhp.jpg" alt="Warner Bros Studios">
-		</a>
-		<div class="Atracciones__Textos">
-			<div class="Atracciones__Titulo">
-				<a href="#" class="Atracciones__enlace-titulo">W. Bros Studios. Londres</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="ContenedorAtracciones">
-	<div class="Atracciones">
-		<a href="#" class="Atracciones__thumbnail">
-			<img class="Atracciones__img" src="img/universal-studios-hollywood-8c8cac97fd9f7fb924fe5a99d1d7e279.png.jpg" alt="AtraccionHollywood">
-		</a>
-		<div class="Atracciones__Textos">
-			<div class="Atracciones__Titulo">
-				<a href="#" class="Atracciones__enlace-titulo">Universal Studios Hollywood</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="ContenedorAtracciones">
-	<div class="Atracciones">
-		<a href="#" class="Atracciones__thumbnail">
-			<img class="Atracciones__img" src="img/universal-studios-japan-d2c827e847435ae4e9d00db4e5a701c0.png.jpg" alt="AtraccionJapon">
-		</a>
-		<div class="Atracciones__Textos">
-			<div class="Atracciones__Titulo">
-				<a href="#" class="Atracciones__enlace-titulo">Universal Studios Japón</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="ContenedorAtracciones">
-	<div class="Atracciones">
-		<a href="#" class="Atracciones__thumbnail">
-			<img class="Atracciones__img" src="img/cineconcert-c2f42b9ff77b8bfacb236f77dbd5ef08.jpeg.jpg" alt="Conciertos de peliculas">
-		</a>
-		<div class="Atracciones__Textos">
-			<div class="Atracciones__Titulo">
-				<a href="#" class="Atracciones__enlace-titulo">Cine con orquesta</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="ContenedorAtracciones">
-	<div class="Atracciones">
-		<a href="#" class="Atracciones__thumbnail">
-			<img class="Atracciones__img" src="img/exhibition-b689d991a26e8c196e31e3073f74f251.jpeg.jpg" alt="Exhibicion Harry Potter">
-		</a>
-		<div class="Atracciones__Textos">
-			<div class="Atracciones__Titulo">
-				<a href="#" class="Atracciones__enlace-titulo">Harry Potter: Exposición</a>
-			</div>
-		</div>
-	</div>
-</div>
-</section>
+</main>
 <!--EMPIEZA FOOTER-->
 <footer>
 	<div class="piehorizontal">
-		<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="youtube" class="youtube"></a> 
-		<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="instagram" class="instagram"></a>
+		<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="logo youtube" class="youtube"></a> 
+		<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="logo instagram" class="instagram"></a>
 		</p>
 	</div>
 
-	  </footer>
+</footer>
 	<!--TERMINA FOOTER-->
 
-<!-- si borro esto me queda igual el carrusel, sirve como bootstrap?	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script>
+		function openNav() {
+			document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+				}
+		function closeNav() {
+			document.getElementsByClassName("mySidenav")[0].style.width = "0";
+				}
+	</script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<!-- si borro esto me queda igual el carrusel, sirve como bootstrap?	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </body>

@@ -13,8 +13,8 @@
 <meta name="description" content="Magic World es un sitio web dedicado a los fans del mundo de Harry Potter."><!-- description entre 70 a 320 caracteres-->
 <meta name="keywords" content="Harry Potter, Hogwarts, Potterhead, Gryffindor, Slytherin, Ravenclaw, Hufflepuff, Ron Weasley, Hermione Granger, Voldemort, Dumbledore, JK Rowling, Draco Malfoy, Animales Fantasticos, Reliquias de la muerte">
 <meta property="og:title" content="Magic World">
-<meta property="og:url" content="http://">
-<meta property="og:imagen" content="">
+<meta property="og:url" content="http://"><!--AGREGARRRRRR-->
+<meta property="og:imagen" content=""><!--AGREGARRRRRR-->
 <meta property="og:description" content="Magic World es un sitio web dedicado a los fans del mundo de Harry Potter.">
 <meta property="og:locale" content="es_ES"><!--preguntar a Anto si es AR_ar-->
 <title>Magic World, sitio dedicado a Potterheads</title>
@@ -30,10 +30,9 @@
 
 	<div class="barranegra">
 		
-		<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="">
+		<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="Logo wizarding world">
 	
 	</div>
-	
 	<nav class="menu">
 		<div class="menu">
 		<ul>
@@ -42,66 +41,75 @@
 			<li><a href="libros.html">Libros</a></li>
 			<li><a href="atracciones.html">Atracciones</a></li>
 			<li><a href="store.html">Store </a></li>
-			<li><a href="novedades.html">  Novedades</a></li>
+			<li><a href="novedades.html"> Novedades</a></li>
 			<li><a href="contacto.html">Unite</a></li>
 		</ul>
 	</div>
 	</nav>
+
+	<nav class="mySidenav">
+		<button class="MenuButton"> 
+			<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="peliculas.html">Peliculas</a>
+					</li>
+					<li>
+						<a href="libros.html">Libros</a>
+					</li>
+					<li>
+						<a href="atracciones.html">Atracciones</a>
+					</li>
+					<li>
+						 <a href="store.html">Store</a>
+					</li>
+					<li>
+						<a href="novedades.html">Novedades</a>
+					</li>
+					<li>
+						<a href="contacto.html">Unite</a>
+					</li>
+				</ul>
+			</a>
+		</button>
+	</nav>
+	<span class="span" style="font-size:25px;cursor:pointer; color: #B39048;" onclick="openNav()">&#9776; </span>
 </header>
-
-<section class="fondoprincipal">
-	<img class="logoharry" src="img/harrypotterlogo.png" alt="logo de harry"><!--favicon.ico-->
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</section>
+	<!--favicon.ico????-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <main>
-			<section>
-					<h1><!--ALGO--></h1>
-				
-					<div>
-					<p class="primerparrafo">
-						Lee, disfrutá de una tarde de peliculas,
-							participá en eventos,
-							comunicate con otros Potterhead, 
-							todo en un mismo lugar.
-					</p>
-				</div> 
-			</section>
 
-		<!--Bloques, Elementos y Modificadores-->
+<section class=""><h1>
+		<!--AGREGAR UN H1-->
+	</h1>
+	<section class="fondoprincipal">
+		<video class="video-background" src="img/harrypotter.mp4" preload="" autoplay muted loop></video>
+	</section>
 
-		<section>
-			<div><img src="img/profeta2.jpg" alt="profeta" class="card__img1"></div>
-					<div class="contenedor">
-						<div class="contenedor__cards"> <!--Elemento-->
-							<div class="card"> <!--Bloque-->
-								<a href="#" class="card__thumbnail--profeta"> <!--Elemento-->
-								</a>
-								<div class="card__textos">
-									<p class="card__titulo1">NOTICIAS </p> 
-									<a href="#" class="boton"> <!--Bloque-->
-										<span class="boton__texto">Leer</span>	
-										<!--Elemento-->
-								</a>
-								</div>
-							</div>
-						</div>
-					</div>
-		</section>
-		
-		<section class="">
-			<div><img src="img/HarryPotterHogwartsMystery_Title.jpg" alt="JuegoHarry" class="card__img1"></div>
-
-		</section>
 </main>
 
+
 <!--EMPIEZA FOOTER-->
+
 <footer>
 <div class="piehorizontal">
-	<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="youtube" class="youtube"></a> 
-	<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="instagram" class="instagram"></a>
+	<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="logo youtube" class="youtube"></a> 
+	<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt=" logo instagram" class="instagram"></a>
 	</p>
 </div>
   </footer>
+
+  <script>
+	function openNav() {
+		document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+			}
+	function closeNav() {
+		document.getElementsByClassName("mySidenav")[0].style.width = "0";
+			}
+</script>
 <!--TERMINA FOOTER-->
 
 

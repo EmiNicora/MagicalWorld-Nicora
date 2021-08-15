@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 <meta name="description" content="Magic World es un sitio web dedicado a los fans del mundo de Harry Potter."><!-- description entre 70 a 320 caracteres-->
 <meta name="keywords" content="Peliculas, Harry Potter, Hogwarts, Potterhead, Gryffindor, Slytherin, Ravenclaw, Hufflepuff, Ron Weasley, Hermione Granger, Voldemort, Dumbledore, JK Rowling, Draco Malfoy, Animales Fantasticos, Reliquias de la muerte">
+<!--Open Graph-->
 <meta property="og:title" content="Magic World, la saga completa de Harry Potter y Animales Fantásticos.">
 <meta property="og:url" content="http://">
 <meta property="og:imagen" content="">
@@ -21,11 +22,12 @@
 </head>
 
 <body id="FondoPantalla">
+
 	<header>
 
 		<div class="barranegra">
 		
-			<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="">
+			<img class="barranegra__tamaño" src="img/WizardingWorld-Logo-White-3.png" alt="Logo wizarding world">
 		
 		</div>
 
@@ -42,15 +44,47 @@
 			</ul>
 			</div>
 		</nav>
-	</header>
 
-	<h1>Libros</h1>
+		<nav class="mySidenav">
+			<button class="MenuButton"> 
+				<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+					<ul>
+						<li>
+							<a href="index.html">Inicio</a>
+						</li>
+						<li>
+							<a href="peliculas.html">Peliculas</a>
+						</li>
+						<li>
+							<a href="libros.html">Libros</a>
+						</li>
+						<li>
+							<a href="atracciones.html">Atracciones</a>
+						</li>
+						<li>
+							 <a href="store.html">Store</a>
+						</li>
+						<li>
+							<a href="novedades.html">Novedades</a>
+						</li>
+						<li>
+							<a href="contacto.html">Unite</a>
+						</li>
+					</ul>
+				</a>
+			</button>
+		</nav>
+		<span class="span" style="font-size:25px;cursor:pointer; color: #B39048;" onclick="openNav()">&#9776; </span>
+	</header>
+<main>
+	<div id="particles-js"></div>
+	<h1>Libros</h1><!--H1 DENTRO DE SECTION-->
 	<section class="titulos">
 	
 		<div class="separadores">
 			<hr class="separador">
 			<picture class="imagenseparador">
-				<img src="img/descarga.png" alt="detalle">
+				<img src="img/descarga.png" alt="detalle de página">
 				</picture>
 					<hr class="separador">
 		</div>
@@ -59,25 +93,25 @@
 		<div class="separadores">
 			<hr class="separador">
 			<picture class="imagenseparador">
-				<img src="img/descarga.png" alt="detalle">
+				<img src="img/descarga.png" alt="detalle de página">
 				</picture>
 					<hr class="separador">
 		</div>
 		
 		</section>
 <!--DESCRIPCION LIBROS-->
-	<div>	<p class="DescripcionLibros">El primer libro de Harry Potter, Harry Potter y la piedra filosofal, fue publicado por Bloomsbury en 1997 con una aclamación popular y crítica inmediata. Seis libros más vendidos, tres libros complementarios, un guión de teatro y dos guiones han seguido desde entonces. Los libros de Harry Potter han sido traducidos a más de 80 idiomas, han ganado múltiples premios y han vendido más de 500 millones de copias en todo el mundo, convirtiéndose en la serie de libros más vendida de la historia...
-			</p>
+	<div><p class="DescripcionLibros">El primer libro de Harry Potter, Harry Potter y la piedra filosofal, fue publicado por Bloomsbury en 1997 con una aclamación popular y crítica inmediata. Seis libros más vendidos, tres libros complementarios, un guión de teatro y dos guiones han seguido desde entonces. Los libros de Harry Potter han sido traducidos a más de 80 idiomas, han ganado múltiples premios y han vendido más de 500 millones de copias en todo el mundo, convirtiéndose en la serie de libros más vendida de la historia...
+		</p>
 	</div>
 <!--FIN DESCRIPCION LIBROS-->
 
 <section>
 	 <!--Empieza BLOQUE-->
 <div class="padre-flex">
-	<a href="#" class="comprarlibro">
 	<div class="card1">
-		<figure class="card__figure1">
-				<img src="img/1.Lapiedrafilosofal.png" alt="hpLibro1" class="card__image1">
+	<a href="#" class="comprarlibro">
+		<figure class="card__figure1"><!-- cambiar figure por div-->
+				<img src="img/1.Lapiedrafilosofal.png" alt="Tapa de libro HP 1" class="card__image1">
 		</figure>
 	</a>
 			<header class="card__header">
@@ -94,7 +128,7 @@
 		<div class="card1">
 			<a href="#" class="comprarlibro">
 				<figure class="card__figure1">
-						<img src="img/2.Camara secreta.jpg" alt="hpLibro1" class="card__image1">
+						<img src="img/2.Camara secreta.jpg" alt="Tapa de libro HP 2" class="card__image1">
 				</figure>
 				</a>
 			<header class="card__header">
@@ -110,8 +144,8 @@
 
 		<div class="card1">
 			<a href="#" class="comprarlibro">
-			<figure class="card__figure1">
-					<img src="img/3.Prisionero de Azkaban.jpg" alt="hpLibro3" class="card__image1">
+			<figure class="card__figure1"></figure>
+					<img src="img/3.Prisionero de Azkaban.jpg" alt="Tapa de libro HP 3" class="card__image1">
 			</figure>
 			</a>
 				<header class="card__header">
@@ -127,7 +161,7 @@
 		<div class="card1">
 			<a href="#" class="comprarlibro">
 			<figure class="card__figure1">
-					<img src="img/4.Caliz de Fuego.jpg" alt="hpLibro4" class="card__image1">
+					<img src="img/4.Caliz de Fuego.jpg" alt="Tapa de libro HP 4" class="card__image1">
 			</figure>
 			</a>
 				<header class="card__header">
@@ -145,7 +179,7 @@
 		<div class="card1">
 			<a href="#" class="comprarlibro">
 			<figure class="card__figure1">
-					<img src="img/5.Orden del Fenix.PNG.png" alt="hpLibro5" class="card__image1">
+					<img src="img/5.Orden del Fenix.PNG.png" alt="Tapa de libro HP 5" class="card__image1">
 			</figure>
 			</a>
 				<header class="card__header">
@@ -163,7 +197,7 @@
 			<div class="card1">
 				<a href="#" class="comprarlibro">
 				<figure class="card__figure1">
-						<img src="img/6.Misteriodelprincipe.jpg" alt="hpLibro6" class="card__image1">
+						<img src="img/6.Misteriodelprincipe.jpg" alt="Tapa de libro HP 6" class="card__image1">
 				</figure>
 				</a>
 					<header class="card__header">
@@ -180,7 +214,7 @@
 				<div class="card1">
 					<a href="#" class="comprarlibro">
 					<figure class="card__figure1">
-							<img src="img/7.Reliquias de la Muerte.jpg" alt="hpLibro7" class="card__image1">
+							<img src="img/7.Reliquias de la Muerte.jpg" alt="Tapa de libro HP 7" class="card__image1">
 					</figure>
 					</a>
 						<header class="card__header">
@@ -198,7 +232,7 @@
 					<div class="card1">
 						<a href="#" class="comprarlibro">
 						<figure class="card__figure1">
-								<img src="img/8.Legado Maldito.jpg" alt="hpLibro6" class="card__image1">
+								<img src="img/8.Legado Maldito.jpg" alt="Tapa de libro Legado maldito" class="card__image1">
 						</figure>
 						</a>
 						</aside>
@@ -218,7 +252,7 @@
 	<div class="separadores">
 		<hr class="separador">
 		<picture class="imagenseparador">
-			<img src="img/descarga.png" alt="detalle">
+			<img src="img/descarga.png" alt="detalle de página">
 			</picture>
 				<hr class="separador">
 	</div>
@@ -227,7 +261,7 @@
 	<div class="separadores">
 		<hr class="separador">
 		<picture class="imagenseparador">
-			<img src="img/descarga.png" alt="detalle">
+			<img src="img/descarga.png" alt="detalle de página">
 			</picture>
 				<hr class="separador">
 	</div>
@@ -238,11 +272,11 @@
 	<div class="card1">
 		<a href="#" class="comprarlibro">
 		<figure class="card__figure1">
-				<img src="img/libroanimalesfantasticos.jpg" alt="hpLibro1" class="card__image1">
+				<img src="img/libroanimalesfantasticos.jpg" alt="Tapa de libro A. Fantásticos" class="card__image1">
 		</figure>
 	</a>
 			<header class="card__header">
-				<h2 class="card__title">HARRY POTTER Y LA PIEDRA FILOSOFAL</h2>
+				<h2 class="card__title">Animales Fantásticos y dónde encontrarlos</h2>
 			</header>
 		<div class="card__footer">
 			<!--boton!!!-->
@@ -253,11 +287,11 @@
 					<div class="card1">
 						<a href="#" class="comprarlibro">
 						<figure class="card__figure1">
-								<img src="img/rectangle-10-e0e160d6b224ade3478dda4ee519adbf.png.jpg" alt="hpLibro1" class="card__image1">
+								<img src="img/rectangle-10-e0e160d6b224ade3478dda4ee519adbf.png.jpg" alt="Tapa Crimenes de Grindelwald" class="card__image1">
 						</figure>
 					</a>
 							<header class="card__header">
-								<h2 class="card__title">HARRY POTTER Y LA PIEDRA FILOSOFAL</h2>
+								<h2 class="card__title">Animles Fantásticos Crimenes de Grindelwald</h2>
 							</header>
 						<div class="card__footer">
 							<!--boton!!!-->
@@ -266,18 +300,28 @@
 							
 </div>
 
-	
+</main>
 	<!--EMPIEZA FOOTER-->
 	<section class="sectionfooter">
 <footer>
 	<div class="piehorizontal">
-		<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="youtube" class="youtube"></a> 
-		<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="instagram" class="instagram"></a>
+		<p><a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><img src="img/youtube.png" alt="logo de youtube" class="youtube"></a> 
+		<a href="https://www.instagram.com/wizardingworld/"><img src="img/instagram.png" alt="logo de instagram" class="instagram"></a>
 		</p>
 	</div>
 	  </footer>
 	</section>
 	<!--TERMINA FOOTER-->
-	<script src="js/wow.min.js"></script>
+	<script>
+		function openNav() {
+			document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+				}
+		function closeNav() {
+			document.getElementsByClassName("mySidenav")[0].style.width = "0";
+				}
+	</script>
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	<!--<script src="js/wow.min.js"></script>-->
 </body>
 </html>
