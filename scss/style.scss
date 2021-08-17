@@ -11,6 +11,15 @@ body{
 @import "Main";
 
 /*TITULOS */
+.tituloprincipal{
+	font-size: 150px;
+}
+
+.parrafoprincipal{
+	font-size: 50px;
+	font-family: 'Cinzel', serif;
+}
+
 
 h1{
 	font-family: 'Cinzel', serif;
@@ -18,12 +27,12 @@ h1{
 	color: #B39048;
 	text-align: center;
 	font-size: 4vw;
-
+	
 	@media (max-width: 360px) {
 		font-size: 8vw;
 	}
 }
-/*FIN TITULOS */
+
 h2{ 
 	font-family: 'Cinzel', serif;
 	text-align: center;
@@ -45,36 +54,9 @@ p{
 	color: white;
 }
 
-.JuegoHarry {
-     p {
-	font-family: 'Cinzel', serif;
-	color: #B39048;
-	font-size: 60px;
-	font-weight: bold;
-     }
-
-}
-
-.harryseleccionador{
-    p {
-        font-family: 'Cinzel', serif;
-        color: #B39048; 
-        font-size: 60px;
-        font-weight: bold;
-    }
-
-}
-
-
 @import "Contenedor";
 @import "Peliculas";
 @import "Libros";
-
-/*SECCION STORE*/
-
-.merch{
-	width: 10%;
-}
 
 /*SECCION STORE*/
 
@@ -86,8 +68,8 @@ p{
 
 .grilla {
     display: grid;
-	grid-template-columns: 600px 300px;
-	grid-template-rows: 190px auto;
+/*	grid-template-columns: 600px 300px;
+	grid-template-rows: 190px auto;*/
 	grid-template-areas: 
 	"imagennoticia titulo"
 	"imagennoticia parrafo";
@@ -102,14 +84,14 @@ p{
 	text-align: center;
 	color: #B39048;
 	grid-area: titulo;
- font-size: 25px	
+ font-size: 35px	
 }
 
 .parrafo{
 	grid-area: parrafo;
 	font-family: 'Montserrat', sans-serif;
 padding: 20px;
-font-size: 16px;
+font-size: 20px;
 justify-content: right;
 }
 

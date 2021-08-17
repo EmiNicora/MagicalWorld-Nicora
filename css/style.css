@@ -9,8 +9,7 @@ body {
   background-color: black;
   height: 70px;
 }
-
-.barranegra__tamaño {
+.barranegra .barranegra__tamaño {
   width: 80px;
   margin: 0 auto;
   display: block;
@@ -46,10 +45,9 @@ body {
 }
 
 .fondoprincipal {
-  height: 610px;
+  height: 300px;
 }
-
-.video-background {
+.fondoprincipal .video-background {
   position: absolute;
   top: 0;
   right: 0;
@@ -61,20 +59,10 @@ body {
   z-index: -1;
 }
 
-.banner {
-  max-width: 100%;
-}
-
-.logoharry {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
 footer {
   text-align: center;
   padding: 3px;
-  color: white;
+  background-color: black;
 }
 
 .piehorizontal {
@@ -108,6 +96,15 @@ footer {
   }
 }
 /*TITULOS */
+.tituloprincipal {
+  font-size: 150px;
+}
+
+.parrafoprincipal {
+  font-size: 50px;
+  font-family: "Cinzel", serif;
+}
+
 h1 {
   font-family: "Cinzel", serif;
   text-align: center;
@@ -121,7 +118,6 @@ h1 {
   }
 }
 
-/*FIN TITULOS */
 h2 {
   font-family: "Cinzel", serif;
   text-align: center;
@@ -141,20 +137,6 @@ h3 {
 p {
   text-align: center;
   color: white;
-}
-
-.JuegoHarry p {
-  font-family: "Cinzel", serif;
-  color: #B39048;
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.harryseleccionador p {
-  font-family: "Cinzel", serif;
-  color: #B39048;
-  font-size: 60px;
-  font-weight: bold;
 }
 
 .contenedor {
@@ -260,11 +242,6 @@ p {
   text-decoration: none;
 }
 
-.pantallapelicula {
-  background-image: url(img/pantallapelicula.jpg);
-  width: 100%;
-}
-
 /* no va, es h2
 .TituloLibrosyPeliculas{
 	font-family: 'cinzel', serif;
@@ -283,14 +260,12 @@ p {
   align-items: flex-start;
   padding-top: 20px;
 }
-
-.separador {
+.separadores .separador {
   border-bottom: 1px solid #b9b4b3;
   opacity: 0.26;
   flex: 1 1;
 }
-
-.imagenseparador {
+.separadores .imagenseparador {
   display: block;
   margin: 0px 10px 20px;
 }
@@ -316,12 +291,7 @@ p {
   margin: 5;
   height: auto;
 }
-.padre-flex div .card__figure {
-  width: 75%;
-  height: 50%;
-  float: right;
-}
-.padre-flex div .card__figure .card__image1 {
+.padre-flex div .card__image1 {
   width: 100%;
 }
 .padre-flex .card__actions {
@@ -374,11 +344,6 @@ p {
     width: 50%;
   }
 }
-.card1 .card__figure {
-  width: 75%;
-  height: 50%;
-  float: right;
-}
 .card1 .card__image1 {
   width: 100%;
 }
@@ -402,37 +367,6 @@ p {
   text-decoration: none;
 }
 
-.card__copy {
-  font-family: "Montserrat", sans-serif;
-}
-
-.card2 {
-  width: 25%;
-  margin: 5;
-}
-
-.card__figure2 {
-  width: 75%;
-  height: 50%;
-  float: none;
-}
-
-.card__image2 {
-  width: 50%;
-  height: 50%;
-  float: none;
-}
-
-.card__title2 {
-  text-align: center;
-  font-size: 13px;
-  width: 70px;
-}
-
-.LibroHP1 {
-  width: 15%;
-}
-
 .DescripcionLibros {
   font-family: "Cinzel", serif;
   text-align: center;
@@ -442,11 +376,6 @@ p {
 }
 
 /*'Cinzel', serif;*/
-/*SECCION STORE*/
-.merch {
-  width: 10%;
-}
-
 /*SECCION STORE*/
 .form-register {
   width: 40%;
@@ -559,8 +488,8 @@ p {
 /*grid*/
 .grilla {
   display: grid;
-  grid-template-columns: 600px 300px;
-  grid-template-rows: 190px auto;
+  /*	grid-template-columns: 600px 300px;
+  	grid-template-rows: 190px auto;*/
   grid-template-areas: "imagennoticia titulo" "imagennoticia parrafo";
   grid-column-gap: 50px;
   align-items: center;
@@ -572,13 +501,13 @@ p {
   text-align: center;
   color: #B39048;
   grid-area: titulo;
-  font-size: 25px;
+  font-size: 35px;
 }
 .grilla .parrafo {
   grid-area: parrafo;
   font-family: "Montserrat", sans-serif;
   padding: 20px;
-  font-size: 16px;
+  font-size: 20px;
   justify-content: right;
 }
 .grilla .imagennoticia {
@@ -627,6 +556,7 @@ p {
   justify-content: space-around;
   flex-wrap: wrap;
   height: auto;
+  margin-bottom: 15px;
 }
 .merchporitems-flex .bordes {
   width: 200px;

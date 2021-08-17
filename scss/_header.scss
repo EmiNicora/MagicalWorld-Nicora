@@ -1,14 +1,13 @@
 .barranegra{
 	background-color: black;
 	height: 70px;
-	
+	.barranegra__tamaño{
+        width: 80px;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
-.barranegra__tamaño{
-	width: 80px;
-	margin: 0 auto;
-	display: block;
-}
 
 .menu{
      text-align: center;
@@ -45,29 +44,19 @@
 
 
 .fondoprincipal{
-    height: 610px;
+    height: 300px;
+    .video-background{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+        width: 100%;
+        z-index: -1;
+    
+    }
 }
 
-.video-background{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-    width: 100%;
-    z-index: -1;
-
-}
-
-.banner{
-	max-width: 100%;
-}
-
-.logoharry{
-	display: block;
-	max-width: 100%;
-	margin:0 auto;
-}
 

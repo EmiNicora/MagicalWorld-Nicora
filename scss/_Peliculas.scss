@@ -1,8 +1,3 @@
-.pantallapelicula{
-	background-image: url(img/pantallapelicula.jpg);
-	width: 100%;
-
-}
 
 /* no va, es h2
 .TituloLibrosyPeliculas{
@@ -17,23 +12,23 @@
 
 */
 .separadores{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-top: 20px;
 
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-padding-top: 20px;
+	.separador{
+		border-bottom: 1px solid rgb(185, 180, 179);
+		opacity: .26;
+		flex:1 1;
+	}
+
+	.imagenseparador{
+		display: block;
+		margin: 0px 10px 20px;
+	}
 }
 
-.separador{
-	border-bottom: 1px solid rgb(185, 180, 179);
-	opacity: .26;
-	flex:1 1;
-}
-
-.imagenseparador{
-	display: block;
-	margin: 0px 10px 20px;
-}
 
 .padre-flex {
 	display: flex;
@@ -58,16 +53,9 @@ padding-top: 20px;
 
 	
 	}
-
-		.card__figure{
-			width: 75%;
-			height: 50%;
-			float: right;
-		
 			.card__image1{
 				width: 100%;
 			}
-		}
 	}
 
 	.card__actions{
@@ -127,12 +115,6 @@ padding-top: 20px;
 		width: 50%;
 	}
 
-	.card__figure{
-		width: 75%;
-		height: 50%;
-		float: right;
-	}
-
 		.card__image1{
 			width: 100%;
 		}
@@ -156,10 +138,6 @@ padding-top: 20px;
 				text-decoration: none;
 				}
 			}
-}
-
-.card__copy{
-font-family: 'Montserrat', sans-serif;
 }
 
 
