@@ -1,0 +1,12 @@
+.parrafonoticia {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+
+	@media (max-width: 768px) {
+		font-size: 25px;
+	}
+}
+
+.imagennoticia {
+	width: 100%;
+}

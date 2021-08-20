@@ -1,4 +1,4 @@
-.form-register{
+.form-register {
 	width: 40%;
 	background: #bd3535;
 	padding: 30px;
@@ -8,18 +8,18 @@
 	font-family: 'cinzel', serif;
 	color: white;
 
-    a{
-        color: white;
-        text-decoration: none;
-        font-family: 'cinzel', serif;
+	a {
+		color: white;
+		text-decoration: none;
+		font-family: 'cinzel', serif;
 
-        &:hover{
-            color: rgb(235, 226, 225);
-	        text-decoration: underline;
-        }
-    }
+		&:hover {
+			color: rgb(235, 226, 225);
+			text-decoration: underline;
+		}
+	}
 
-	.controls{
+	.controls {
 		width: 95%;
 		background: white;
 		padding: 10px;
@@ -30,7 +30,7 @@
 		font-size: 18px;
 	}
 
-	.botonregistro{
+	.botonregistro {
 		width: 90%;
 		background: #B39048;
 		border: none;
@@ -39,8 +39,7 @@
 		margin: 16px;
 	}
 
-	@media (max-width: 480px) {
+	@media (max-width: 576px) {
 		width: 100%;
 	}
 }
-
