@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 
 @import "operadores";
@@ -25,7 +25,11 @@ p {
 	font-size: 150px;
 
 	@media (max-width: 576px) {
-		font-size: 150%;
+		font-size: 25px;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 50px;
 	}
 }
 
@@ -35,9 +39,8 @@ p {
 	color: white;
 
 	@media (max-width: 576px) {
-		font-size: 100%;
+		font-size: 25px;
 	}
-
 }
 
 
@@ -62,7 +65,7 @@ h2 {
 	font-size: $font-size + 100;
 
 	@media (max-width: 576px) {
-		font-size: 6vw;
+		font-size: 4vw;
 	}
 }
 
